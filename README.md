@@ -8,7 +8,11 @@ C:\ProgramData\Microsoft\Windows\system.bat
 ### Install launcher to,    
 ```
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\launcher.vbs
-```    
+```       
+### Alternatively use the installer script,  
+``` 
+allinone.ps1  
+```
    
 > After login, Windows will load the start menu programs, at that moment Windows will launch any program shortcuts in the Startup folder - infact it doesn't even need to be a shortcut, it can also be the program itself.
     
