@@ -1,2 +1,20 @@
 # TakeTheL
 Simple yet annoying windows virus for beginners and pranksters to enjoy learning 🤪
+   
+### Install batch file to,
+```
+C:\ProgramData\Microsoft\Windows\system.bat
+```    
+### Install launcher to,    
+```
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\launcher.vbs
+```    
+   
+> After login, Windows will load the start menu programs, at tha moment Windows will launch any program shortcuts in the Startup folder - infact it doesn't even need to be a shortcut, it can also be the program itself.
+    
+## Procedure,       
+- Windows will launch `launcher.vbs` as soon as the user completes the login - when launcher is executed, it will silently start `system.bat` which is hidden in a different directory.    
+- `system.bat` will execute a logout using `shutdown /l`, causing an infinite logout loop when the user tries to login.
+     
+### Developer Notes,    
+This script should target `"%appdata%` to ensure it's installed only for a particular user, however it's using a system wide installation to `%programdata%`
