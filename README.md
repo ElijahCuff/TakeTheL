@@ -10,7 +10,7 @@ C:\ProgramData\Microsoft\Windows\system.bat
 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\launcher.vbs
 ```    
    
-> After login, Windows will load the start menu programs, at tha moment Windows will launch any program shortcuts in the Startup folder - infact it doesn't even need to be a shortcut, it can also be the program itself.
+> After login, Windows will load the start menu programs, at that moment Windows will launch any program shortcuts in the Startup folder - infact it doesn't even need to be a shortcut, it can also be the program itself.
     
 ## Procedure,       
 - Windows will launch `launcher.vbs` as soon as the user completes the login - when launcher is executed, it will silently start `system.bat` which is hidden in a different directory.    
