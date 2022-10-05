@@ -18,3 +18,11 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\launcher.vbs
      
 ### Developer Notes,    
 This script should target `"%appdata%` to ensure it's installed only for a particular user, however it's using a system wide installation to `%programdata%`
+     
+### Uninstalling,    
+- Launch into recovery mode by navigating to restart on the login screen and holding `Shift` while clicking restart.   
+- Select Command Prompts under Other Recovery options   
+- Once in a terminal, delete the files using the following command,     
+`del "C:\ProgramData\Microsoft\Windows\system.bat"`    
+and    
+`del "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\launcher.vbs"`
